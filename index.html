@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hassan Wattar - Chemical Biology Student</title>
     <!-- Chosen Palette: Cool Professional (Blues & Grays) -->
-    <!-- Application Structure Plan: A single-page portfolio with a sticky top navigation (About, Experience, Projects, Skills) for easy, non-linear exploration. The 'Experience' section is an interactive vertical timeline where users click to reveal details, reducing clutter. The 'Skills' section is a clear, categorized list, emphasizing key competencies without a visual graph for a more understated professional feel. The 'Projects' section highlights the academic project. This structure prioritizes a refined, direct presentation of qualifications for a professional audience. -->
-    <!-- Visualization & Content Choices: 1. Experience -> Goal: Show progression and detail -> Viz: Interactive vertical timeline (HTML/CSS/JS) -> Interaction: Click on a role to expand details. Justification: Maintains engagement while keeping the initial view uncluttered for professional appearance. 2. Skills -> Goal: Inform clearly and concisely -> Viz: Categorized textual list (HTML/CSS) -> Interaction: None, direct presentation. Justification: Aligns with a more "professional" and direct approach, avoiding a potentially "busy" chart for a clean aesthetic. 3. Lab Project -> Goal: Inform and showcase depth -> Viz: Dedicated content card (HTML/CSS) -> Justification: Gives prominence to a key academic achievement with a clean presentation. -->
+    <!-- Application Structure Plan: A single-page portfolio with a sticky top navigation (About, Experience, Projects, Skills, Volunteer) for easy, non-linear exploration. The 'Experience' section is an interactive vertical timeline where users click to reveal details, reducing clutter. The 'Skills' section is a clear, categorized list, emphasizing key competencies without a visual graph for a more understated professional feel. The 'Projects' section highlights the academic project. A new 'Volunteer Experience' section is added to showcase community involvement. This structure prioritizes a refined, direct presentation of qualifications for a professional audience. -->
+    <!-- Visualization & Content Choices: 1. Experience -> Goal: Show progression and detail -> Viz: Interactive vertical timeline (HTML/CSS/JS) -> Interaction: Click on a role to expand details. Justification: Maintains engagement while keeping the initial view uncluttered for professional appearance. 2. Skills -> Goal: Inform clearly and concisely -> Viz: Categorized textual list (HTML/CSS) -> Interaction: None, direct presentation. Justification: Aligns with a more "professional" and direct approach, avoiding a potentially "busy" chart for a clean aesthetic. 3. Lab Project -> Goal: Inform and showcase depth -> Viz: Dedicated content card (HTML/CSS) -> Justification: Gives prominence to a key academic achievement with a clean presentation. 4. Volunteer -> Goal: Showcase community involvement -> Viz: Experience timeline format (HTML/CSS/JS). Justification: Consistent and familiar presentation for different types of experience. -->
     <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -56,6 +56,7 @@
                 <a href="#about" class="nav-link pb-1">About</a>
                 <a href="#experience" class="nav-link pb-1">Experience</a>
                 <a href="#projects" class="nav-link pb-1">Projects</a>
+                <a href="#volunteer" class="nav-link pb-1">Volunteer</a>
                 <a href="#skills" class="nav-link pb-1">Skills</a>
             </div>
             <div class="md:hidden">
@@ -68,6 +69,7 @@
             <a href="#about" class="block py-2 px-6 text-sm hover:bg-blue-50">About</a>
             <a href="#experience" class="block py-2 px-6 text-sm hover:bg-blue-50">Experience</a>
             <a href="#projects" class="block py-2 px-6 text-sm hover:bg-blue-50">Projects</a>
+            <a href="#volunteer" class="block py-2 px-6 text-sm hover:bg-blue-50">Volunteer</a>
             <a href="#skills" class="block py-2 px-6 text-sm hover:bg-blue-50">Skills</a>
         </div>
     </header>
@@ -158,6 +160,31 @@
                         <li>Utilized various chemical biology assays and spectrophotometry to collect precise data on enzyme kinetics.</li>
                         <li>Prepared and presented a comprehensive scientific report detailing the experimental methodology, all findings, a thorough analysis, and conclusions on the compounds' potential as therapeutic agents.</li>
                     </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="volunteer" class="py-20 section-fade-in">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800">Volunteer Experience</h2>
+            <p class="text-center mt-4 text-gray-500 max-w-2xl mx-auto">My commitment extends to active community involvement, where I apply leadership and organizational skills to make a positive impact.</p>
+
+            <div class="mt-16 max-w-3xl mx-auto">
+                <div class="relative">
+                    <div class="border-l-2 border-blue-200 absolute h-full top-0 left-2"></div>
+                    
+                    <div class="timeline-item mb-12 pl-8 cursor-pointer" data-timeline-item="4">
+                        <div class="absolute w-4 h-4 bg-blue-600 rounded-full -left-2 ring-4 ring-white"></div>
+                        <p class="text-sm text-gray-500">February 2023 – Present</p>
+                        <h3 class="text-xl font-bold text-gray-800">Head Coach</h3>
+                        <p class="text-md text-gray-600">Oakville Soccer Club</p>
+                        <div class="timeline-item-content max-h-0 opacity-0 mt-2 overflow-hidden">
+                            <ul class="list-disc list-inside text-gray-600 space-y-2 mt-2">
+                                <li>Currently leading and mentoring an U11 boys' soccer team (May 2025 – Present), focusing on fundamental skill development, teamwork, and fostering a positive sports environment.</li>
+                                <li>Coached an U9 boys' soccer team (February 2023 – August 2023), introducing basic soccer skills and game concepts in a fun and supportive setting, emphasizing participation and early athletic development.</li>
+                                <!-- Future volunteer positions can be added here as new list items -->
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
